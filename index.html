@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心碎舔狗飲料店</title>
+    <style>
+        body {
+            background-color: rgb(7, 30, 64);
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            transition: border-color 0.3s;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+        }
+        nav a:hover {
+            background-color: aqua;
+        }
+
+        header {
+            height: 300px;
+            background: linear-gradient(70deg, #522B5B, #2B124C, #522B5B);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header img {
+            margin-top: 55px;
+            max-height: 40%;
+            max-width: 40%;
+            border: 4px solid purple;
+            border-radius: 50%;
+            animation: fadeInImage 2s ease-in-out, moveFromBottom 2s ease-in-out;
+        }
+
+        header p {
+            margin-top: 20px;
+            font-size: 40px;
+            color: #ffffff;
+            animation: fadeInText 2s ease-in-out 0.2s, moveFromBottom 2s ease-in-out 0.2s;
+        }
+
+        section {
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+                url('https://cdn.discordapp.com/attachments/961510145815380000/1172008637904977920/UmFNNgsV6v6qSyI4LCTEZYR0rW3KU9DTRhFxQMiq.png?ex=655ec11a&is=654c4c1a&hm=91cf89e9270571be5c13de0a7ed0422e6934641f57bd74b96772b663dab308bb&');
+            background-size: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        .section_p{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 40px;
+            color: #ffffff;
+            animation: fadeInText 2s ease-in-out 0.2s, moveFromBottom 2s ease-in-out 0.2s;
+            background-color: aqua;
+        }
+
+        .section_aboutme {
+            text-align: left;
+            margin: 0 15% 25px 15%;
+            color: #ffffff;
+            font-size: 24px;
+            animation: fadeInText 2s ease-in-out 0.2s, moveFromBottom 2s ease-in-out 0.2s;
+            background-color: #2B124C;
+        }
+
+        .column {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            max-width: 50%;
+        }
+
+        .column img {
+            width: 500px;
+            height: 500px;
+            border: 2px solid rgb(128, 0, 0);
+            border-radius: 5%;
+            animation: fadeInImage 2s ease-in-out, moveFromBottom 2s ease-in-out;
+        }
+
+        .column p {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #ffffff;
+            animation: fadeInText 2s ease-in-out 0.2s, moveFromBottom 2s ease-in-out 0.2s;
+            background-color: #332b5b;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+        footer {
+            height: 300px;
+            flex-direction: column;
+            background: darkkhaki;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        footer p {
+            margin-top: 20px;
+            font-size: 40px;
+            color: #ffffff;
+            animation: fadeInText 2s ease-in-out 0.2s, moveFromBottom 2s ease-in-out 0.2s;
+        }
+
+        .footer_section {
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer_img {
+            max-height: 50px;
+            max-width: 50px;
+            border: 3px solid purple;
+            border-radius: 50%;
+            margin: 0 10px;
+            animation: fadeInImage 2s ease-in-out, moveFromBottom 2s ease-in-out;
+            transition: border-color 0.3s;
+        }
+        .footer_img:hover {
+            border-color: aqua;
+        }
+
+
+        @media (max-width: 768px) {
+            .column {
+                flex: 1;
+                max-width: 80%;
+            }
+        }
+
+        @keyframes fadeInImage {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes moveFromBottom {
+            0% {
+                transform: translateY(50px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#head">首頁</a>
+        <a href="#menu">菜單</a>
+        <a href="#aboutme">關於我們</a>
+        <a href="#contactme">聯絡我們</a>
+    </nav>
+    <header id="head">
+        <img src="https://cdn.discordapp.com/attachments/961510145815380000/1170596085891342426/VRChat_2023-09-20_08-04-2311.png?ex=65599d8f&is=6547288f&hm=2059af31069312087c915e660e2fe1e7d8fb9e24445113b81344d63454aea9db&" alt="">
+        <p>心碎舔狗飲料店</p>
+    </header>
+    <section>
+        <p class="section_p" id="aboutme">關於我們</p>
+        <p class="section_aboutme">歡迎來到我們的飲料店！我們的使命是為您提供最美味、最有創意、以及最用心製作的飲品，每一杯飲料都是我們用心製作的成果。<br>
+
+            我們的故事始於對飲料的熱愛，以及對品質的不懈追求。我們相信，一杯優質的飲品，不僅僅是飲料的組合，更是對生活的一種緬懷和享受。每一杯飲品都承載著我們對於飲品藝術的熱情，以及對原材料品質的堅持。<br>
+            
+            我們用心選擇每一個原材料，只使用最新鮮、最優質的食材。我們的製作過程不僅注重味道，還融入了對飲品藝術的深刻理解。我們的團隊不斷學習和創新，以確保每一杯飲品都是獨一無二的。我們不只是一個飲料店，更是一個將飲品提升到藝術境界的工作室。<br>
+            
+            無論您是喜歡果汁、茶飲，我們都會用心為您製作出完美的一杯。每一杯飲品背後都有著我們對飲品的無限熱情，以及為了將美味帶給您而不懈努力的付出。<br>
+            
+            我們誠摯地感謝您的支持，讓我們可以繼續將用心與良苦融入每一杯飲品中。請您隨時來品嚐我們的飲品，體驗我們的用心和熱情。我們期待為您製作一杯獨一無二的美味飲品，並與您共同分享這份愛與熱情。</p>
+    </section>
+    <section>
+        <p class="section_p" id="menu">菜單</p>
+    </section>
+    <section>
+        <div class="column">
+            <img src="https://cdn.discordapp.com/attachments/961510145815380000/1170603609210232923/Lemon-Conc.-Juice-6.jpg?ex=6559a491&is=65472f91&hm=4976aad6073626aa1d6021b1e1a25eef8a41365a1cc263c8fb980fa969967dd2" alt="Image 1">
+            <p>暮然回首</p>
+            <p>小杯 55元 大杯 65元</p>
+        </div>
+        <div class="column">
+            <img src="https://cdn.discordapp.com/attachments/961510145815380000/1170603588230328390/001_640x960_20210601.jpg?ex=6559a48c&is=65472f8c&hm=3eba0636ef4d0185243b07d47096eae34b893ce7c614224166fe0eed9428a737" alt="Image 2">
+            <p>初戀</p>
+            <p>小杯 60元 大杯 70元</p>
+        </div>
+        <div class="column">
+            <img src="https://cdn.discordapp.com/attachments/961510145815380000/1170694272509554699/ca661c009247ed0d6df2dad8d11ff8b7.jpg?ex=6559f901&is=65478401&hm=0736f94df685e39736b5e1c6960fcb4d3afcf8e46a68598a647506382ab74b65&" alt="Image 1">
+            <p>檸檬蛋糕</p>
+            <p>一份 75元</p>
+        </div>
+        <div class="column">
+            <img src="https://tokyo-kitchen.icook.network/uploads/recipe/cover/320183/fa118e8493818a7c.jpg" alt="Image 1">
+            <p>檸檬蛋塔</p>
+            <p>一份 85元</p>
+        </div>
+    </section>
+    <hr style="margin: 0px;">
+    <footer id="contactme">
+        <p>聯繫我們</p>
+        <div class="footer_section">
+            <a href="https://lin.ee/GAiXESZ" target="_blank">
+                <img src="https://play-lh.googleusercontent.com/74iMObG1vsR3Kfm82RjERFhf99QFMNIY211oMvN636_gULghbRBMjpVFTjOK36oxCbs" alt="outsidelink" class="footer_img">
+            </a>
+            <a href="https://twitter.com/littleTWEric" target="_blank">
+                <img src="https://cdn.discordapp.com/attachments/961510145815380000/1170637933309599804/F1zqtWtWYAoC11t.jpg?ex=6559c488&is=65474f88&hm=e23718a1e02ebe31f7648b976a2d05fe126cb0a6b86a03fd4c72ac3272738ebe&" alt="outsidelink" class="footer_img">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
